@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Survey</title>
+  </head>
+  <style>
+    body {
+      background-color: #333;
+      color: #3CB043;
+      font-family: monospace;
+      font-size: 20px;
+      text-align: center;
+    }
+    select {
+      margin-top: 30px;
+    }
+    #comments {
+      width: 400px;
+      height: 100px;
+      margin-top: 30px;
+    }
+    input {
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <header>
+      <h1 id="title">Vehicle Survey</h1>
+      <p id="description">Please fill out this short survey about your experience with our vehicles.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <br>
+        <label id="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <br>
+        <label id="model-year">Model year:</label>
+        <input type="number" name="year" id="model-year" placeholder="Year" min="2006" max="2021" required>
+        <br>
+        <label id="version">Trim Package:</label>
+        <select id="version" name="version">
+          <option value="lite">Lite</option>
+          <option value="standard">Standard</option>
+          <option value="pro">Pro</option>
+          <option value="pro-max">Pro Max</option>
+        </select>
+        <br>
+        <label id="color">Color:</label>
+        <input type="radio" name="color" value="jet-black">Jet black
+        <input type="radio" name="color" value="sandstone">Sandstone
+        <input type="radio" name="color" value="forest-green">Forest green
+        <br>
+        <label id="transmission">Transmission:</label>
+        <input type="checkbox" name="transmission" value="manual">Manual
+        <input type="checkbox" name="transmission" value="automatic">Automatic
+        <br>
+        <label id="comments">Comments:</label>
+        <textarea rows="7" cols="25" id="comments" placeholder="comments or concerns"></textarea>
+        <br>
+        <input type="submit">
+      </form>
+    </main>
+  </body>
+</html>
